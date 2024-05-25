@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 253062792}
   - component: {fileID: 253062793}
   - component: {fileID: 253062794}
+  - component: {fileID: 253062795}
+  - component: {fileID: 253062796}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -229,6 +231,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &253062795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253062791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0add3452342a41b08fc0ff48f5a5b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &253062796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253062791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edeb9e9231e4e4d69b4ead1f4a05e676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &437591194
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +604,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 028da875d924d4019af3683fe0a216f3, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -615,6 +641,8 @@ MonoBehaviour:
   agentRigidbody: {fileID: 0}
   playerInput: {fileID: 0}
   speed: 0
+  agentManager: {fileID: 0}
+  agentRenderer: {fileID: 0}
 --- !u!1001 &1189827568
 PrefabInstance:
   m_ObjectHideFlags: 0
