@@ -277,6 +277,7 @@ MonoBehaviour:
   agentInput: {fileID: 0}
   animationManager: {fileID: 0}
   agentRenderer: {fileID: 0}
+  groundDetector: {fileID: 0}
   curretSate: {fileID: 0}
   previousState: {fileID: 0}
   IdleState: {fileID: 1242610393}
@@ -797,6 +798,8 @@ GameObject:
   - component: {fileID: 1242610392}
   - component: {fileID: 1242610393}
   - component: {fileID: 1242610394}
+  - component: {fileID: 1242610395}
+  - component: {fileID: 1242610396}
   m_Layer: 0
   m_Name: States
   m_TagString: Untagged
@@ -830,6 +833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab761227b1aa64d4e8f52ec700b64f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpState: {fileID: 1242610395}
+  FallState: {fileID: 1242610396}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -849,6 +854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ff897919f1bbe4e987cf8853f45334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpState: {fileID: 1242610395}
+  FallState: {fileID: 1242610396}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -860,6 +867,59 @@ MonoBehaviour:
   acceleration: 50
   deacceleration: 50
   maxSpeed: 6
+--- !u!114 &1242610395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242610391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669c4eb5ff9bbc841970df7ced1b2e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpState: {fileID: 0}
+  FallState: {fileID: 1242610396}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 0}
+  IdleState: {fileID: 1242610393}
+  acceleration: 50
+  deacceleration: 50
+  maxSpeed: 6
+  jumpForce: 12
+  lowJumpMultiplier: 2
+--- !u!114 &1242610396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242610391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6c4e0aae2adcc4ca2e38cc873881ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpState: {fileID: 1242610395}
+  FallState: {fileID: 1242610396}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 0}
+  IdleState: {fileID: 1242610393}
+  acceleration: 50
+  deacceleration: 50
+  maxSpeed: 6
+  gravityModifier: 0.5
 --- !u!4 &1272122735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7881399034294933230, guid: e8264867dbd8dbb4c811cc12c1a14ace, type: 3}
