@@ -1,21 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO.Enumeration;
 using UnityEngine;
 
-[CreateAssetMenu(fileName="AgentData",menuName="Agent/Data")]
+[CreateAssetMenu(fileName = "AgentData", menuName = "Agent/Data")]
 public class AgentDataSO : ScriptableObject
 {
-    [Header("Movement Data")]
+    [Header("Movement data")]
     [Space]
-    public float maxxSpeed = 6;
+    public float maxSpeed = 6;
     public float acceleration = 50;
     public float deacceleration = 50;
 
-
-    [Header("Jump Data")]
+    [Header("Jump data")]
     [Space]
     public float jumpForce = 12;
     public float lowJumpMultiplier = 2;
-    public float gravityModifuer = 0.5f;
+    public float gravityModifier = 0.5f;
 }

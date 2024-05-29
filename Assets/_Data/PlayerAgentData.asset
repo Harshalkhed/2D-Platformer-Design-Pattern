@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ed1051815bd24669b355558e61afdef, type: 3}
+  m_Script: {fileID: 11500000, guid: 51018dff358314a46bc045d76f444f50, type: 3}
   m_Name: PlayerAgentData
   m_EditorClassIdentifier: 
-  maxxSpeed: 6
+  maxSpeed: 6
   acceleration: 50
   deacceleration: 50
   jumpForce: 12
-  lowJumpMultiplier: 2
-  gravityModifuer: 0.5
+  lowJumpMultiplier: 5
+  gravityModifier: 0.5
